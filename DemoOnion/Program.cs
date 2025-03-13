@@ -19,7 +19,6 @@ namespace DemoOnion
             
             categoryManager.AddCategory(new CategoryCreateDto() { Name = "Elektronika" });
             productManager.AddProduct(new ProductCreateDto() { Name = "Tozsoran Filips", Price = 240, CategoryId = 1 });
-            appDbContext.SaveChanges();
             var product = productManager.GetProduct(x=>x.Id==2);
             Console.WriteLine($"{product.Id}.{product.Name} {product.Price} ");
         }
