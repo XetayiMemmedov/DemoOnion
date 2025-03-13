@@ -30,6 +30,7 @@ namespace Demo.Aplication.Services
             };
 
             _repository.Add(product);
+            
         }
 
         public ProductDto GetProduct(Func<Product, bool> predicate)
